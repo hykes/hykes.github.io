@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>浪霄笔记</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <nav>
+    <a href="#/">首页</a>
+    <!-- <a href="#/reading-books/">读书笔记</a> -->
+  </nav>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      // 侧边栏标题
+      name: '浪霄笔记',
+      // 开启github角标
+      repo: 'hykes/hykes.github.io',
+      // 开启侧边栏
+      loadSidebar: true,
+      // 开启封面页
+      coverpage: true,
+      // 切换页面后自动跳转到页面顶部
+      auto2top: true,
+      // 显示文章2级目录到侧边栏
+      subMaxLevel: 2,
+      // 替换主题色
+      themeColor: '#4CAF50',
+      // 指定首页
+      homepage: 'README.md',
+      // 定义路由别名
+      alias: {
+        // '/reading-books.*/_sidebar.md': '/reading-books/_sidebar.md',
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      // 时间格式设置
+      formatUpdated: '{YYYY}-{MM}-{DD}',
+      externalLinkTarget: '_self',
+      // 搜索设置
+      search: {
+        noData: '搜索无结果!',
+        paths: 'auto',
+        placeholder: '搜索',
+        depth: 2
+      },
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+      },
+      // 插件设置
+      plugins: [
+        function (hook) {
+          var footer = [
+            '<footer>',
+            '<span>Powered by <a href="https://docsify.js.org" target="_blank">docsify</a> && Published by <a href="https://github.com/hykes" target="_blank">浪霄</a>&copy;2019</span>',
+            '</footer>'
+          ].join('')
+
+          hook.afterEach(function (html) {
+            return html + footer
+          })
+        },
+      ]
+    }
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-http.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-git.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+</body>
+</html>
