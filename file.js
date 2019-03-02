@@ -45,7 +45,7 @@ var date = new Date()
 var year = date.getFullYear()
 var month = date.getMonth()+1
 var day = date.getDate()
-const filePath = path.join(__dirname, type + '/' + year + '/' + month + '/' + day + '/new_blog')
+const filePath = path.join(__dirname, type + '/' + year + '/' + month + '/' + day + '/article_00')
 
 mkdirs(filePath, function (err) {
     if(err){
