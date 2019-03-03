@@ -3,6 +3,7 @@
 * **系统设计**
     * [站内信系统设计](blogs/2019/3/3/article_3/)
 * **工程实践**
+    * [Mybatis中的${}和#{}的区别](blogs/2019/3/3/article_4/)
     * [MySQL用户及权限管理](blogs/2019/3/3/article_1/)
     * [如何编写自定义spring-boot-starter](blogs/how-to-customize-spring-boot-starter.md)
     * [巧用GitHub做为个人maven仓库](blogs/use-github-for-own-maven-repository.md)
