@@ -1,5 +1,7 @@
 * **业务积累**
     * [理解电商体系中的商品、SPU、SKU、类目和属性等概念](blogs/2019/3/3/article_2/)
+* **系统设计**
+    * [站内信系统设计](blogs/2019/3/3/article_3/)
 * **工程实践**
     * [MySQL用户及权限管理](blogs/2019/3/3/article_1/)
     * [如何编写自定义spring-boot-starter](blogs/how-to-customize-spring-boot-starter.md)
