@@ -6,6 +6,7 @@
 * **数据库专题**
     * [MySQL用户及权限管理](blogs/2019/3/3/article_1/)
 * **工程实践**
+    * [基于消息中间件的分布式事务解决方案](blogs/2019/3/7/article_1/)
     * [Spring统一异常处理](blogs/2019/3/5/article_3/)
     * [Mybatis中的${}和#{}的区别](blogs/2019/3/3/article_4/)
     * [如何编写自定义spring-boot-starter](blogs/how-to-customize-spring-boot-starter.md)
