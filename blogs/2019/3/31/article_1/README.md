@@ -4,7 +4,7 @@ ab是apache自带的压力测试工具，非常实用。ab命令会创建多个�
 
 使用ab工具模拟多线程并发请求，对发出负载的机器要求比较低，既不会占用很多cpu，也不会占用很多的内存。但却会给目标服务器造成巨大的负载，因此也是很多DDoS攻击的必备良药，所以要慎用，别耗光自己机器的资源。
 
-ab的安装非常简单，如果是源码安装apache的话，那就更简单了。apache安装完毕后ab命令存放在apache安装目录的bin目录下，如果apache 是通过yum的RPM包方式安装的话，ab命令默认存放在/usr/bin目录下。
+ab的安装非常简单，如果是源码安装apache，安装完毕后ab命令存放在apache安装目录的bin目录下。如果通过yum的RPM包方式安装的话，ab命令默认存放在/usr/bin目录下。
 
 [Apache ab docs](http://httpd.apache.org/docs/2.4/zh-cn/programs/ab.html)
 
@@ -13,12 +13,14 @@ ab的安装非常简单，如果是源码安装apache的话，那就更简单了
 ab [options] [http[s]://]hostname[:port]/path
 ```
 
+可以这样写：
+
 ```bash
 ab -c 200 -n 5000 http://127.0.0.1:8080/api/items/1
 ```
 -c表示模拟200个并发，-n表示整个过程发出5000个请求。
 
-还可以这样写：
+也可以这样写：
 
 ```bash
 ab -t 60 -c 200 http://127.0.0.1:8080/api/items/1
@@ -32,8 +34,6 @@ ab -t 60 -c 200 http://127.0.0.1:8080/api/items/1
 ab -t 60 -c 200 -p body.txt -T application/json -H "cookie: taid=95e79948-1a3b-4812-af50-a4f33e49f7e8;" -H "User-Agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36" http://127.0.0.1:8080/api/login
 ```
 -p 表示POST请求，body.text表示请求参数的数据文件(内容可以是json格式，也可以是query params格式)，-T表示所使用的Content-type头信息，-H表示请求头信息。
-
--T表示
 
 ## 具体参数说明
 
