@@ -173,13 +173,7 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\cn.hykes.boot.Ha
 </dependency>
 ```
 
-9.在该项目的的配置类中添加注解：
-
-```java
-@Import(HandlebarsAutoConfiguration.class)
-```
-
-10.在spring boot项目的application.yml文件中加入：
+9.在spring boot项目的application.yml文件中加入：
 
 ```yml
 #hbs
@@ -189,7 +183,7 @@ hbs:
   suffix: .hbs
 ```
 
-11.在resources文件夹中，新建statics文件夹，创建模版文件index.hbs:
+10.在resources文件夹中，新建statics文件夹，创建模版文件index.hbs:
 
 ```html
 <html>
@@ -202,7 +196,7 @@ hbs:
 </html>
 ```
 
-12.在controller类中，添加：
+11.在controller类中，添加：
 
 ```java
 @RequestMapping(value = "/index", method = RequestMethod.GET)
@@ -212,9 +206,9 @@ public ModelAndView index(ModelMap model){
 }
 ```
 
-13.至此，访问路径，可以发现模版引擎生效。
+12.至此，访问路径，可以发现模版引擎生效。
 
-14.项目源码
+13.项目源码
 
 starter项目
 ```
