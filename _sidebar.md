@@ -8,6 +8,7 @@
 * **数据库专题**
     * [MySQL用户及权限管理](blogs/2019/3/3/article_1/)
 * **工程实践**
+    * [聊聊什么是缓存穿透、缓存击穿、缓存雪崩](blogs/2019/6/article_1/)
     * [RocketMQ问题排查](blogs/2019/5/29/article_2/)
     * [Dubbo问题排查](blogs/2019/5/29/article_1/)
     * [Redis使用SCAN代替KEYS命令](blogs/2019/5/23/article_1/)

@@ -1,0 +1,11 @@
+{
+    "name": "blogs.hykes.cn",
+    "version": "1.0.0",
+    "author": "浪霄",
+    "email": "hehaiyangwork@qq.com",
+    "description": "",
+    "scripts": {
+        "blogs": "node file.js blogs",
+        "draft": "node file.js draft"
+    }
+}

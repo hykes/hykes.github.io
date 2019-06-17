@@ -11,9 +11,8 @@
 <body>
   <nav>
     <a href="#/">首页</a>
-    <!-- <a href="#/reading-books/">读书笔记</a> -->
   </nav>
-  <div id="app"></div>
+  <div id="app">加载中，请稍后...</div>
   <script>
     window.$docsify = {
       // 侧边栏标题
@@ -33,10 +32,10 @@
       // 替换主题色
       themeColor: '#4CAF50',
       // 指定首页
-      // homepage: '/README.md',
+      homepage: '/README.md',
       // 定义路由别名
       alias: {
-        // '/reading-books.*/_sidebar.md': '/reading-books/_sidebar.md',
+        '/reading-books.*/_sidebar.md': '/reading-books/_sidebar.md',
         '/.*/_sidebar.md': '/_sidebar.md'
       },
       // 时间格式设置
@@ -68,16 +67,7 @@
         },
       ]
     }
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
-    }
   </script>
-  <script>
-    ((window.gitter = {}).chat = {}).options = {
-      room: 'hykes_blog/community'
-    };
-  </script>
-  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
@@ -90,5 +80,16 @@
   <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <script>
+    // 离线
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+    // gitter
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'hykes_blog/community'
+    };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 </body>
 </html>

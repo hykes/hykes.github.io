@@ -3,14 +3,10 @@ var path = require("path");
 
 const argv = process.argv
 if (argv.length <= 2) {
-    console.log('请输入文本类型:blogs|draft')
+    console.log('请输入文章分类！')
     return
 }
 const type = argv[2]
-if (type != 'blogs' && type != 'draft') {
-    console.log('文本类型错误:blogs|draft')
-    return
-}
 
 /**
  * 同步递归创建目录
@@ -44,8 +40,8 @@ var mkfile = function(file, cb) {
 var date = new Date()
 var year = date.getFullYear()
 var month = date.getMonth()+1
-var day = date.getDate()
-const filePath = path.join(__dirname, type + '/' + year + '/' + month + '/' + day + '/article_00')
+// var day = date.getDate()
+const filePath = path.join(__dirname, type + '/' + year + '/' + month + '/article_00')
 
 mkdirs(filePath, function (err) {
     if(err){
