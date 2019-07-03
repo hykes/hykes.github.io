@@ -5,6 +5,7 @@
     "email": "hehaiyangwork@qq.com",
     "description": "",
     "scripts": {
+        "start": "docsify serve",
         "blogs": "node file.js blogs",
         "draft": "node file.js draft"
     }

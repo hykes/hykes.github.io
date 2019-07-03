@@ -12,7 +12,7 @@ host：指定可以登录的主机，其中localhost表示本机，%表示所有
 举例：
 
 ```sql
-CREATE USER 'testuser'@'%' INDENTIFIED BY '123';
+CREATE USER 'testuser'@'%' IDENTIFIED BY '123';
 ```
 
 创建一个用户后，user表中会插入一行新的数据，但是该用户是没有任何权限的
