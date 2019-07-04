@@ -6,10 +6,10 @@
 
 - **微信**
 添加时请备注“`浪霄笔记`”
-<img src="/hykes.jpg" width="180" height="180"/>
+<img src="/images/hykes.jpg" width="180" height="180"/>
 
 - **公众号**
 笔记同步公众号
-<img src="/langxiao.jpg" width="180" height="180"/>
+<img src="/images/langxiao.jpg" width="180" height="180"/>
 
 <hr/>

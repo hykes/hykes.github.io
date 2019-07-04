@@ -1,4 +1,4 @@
-<img width="180px" style="border-radius: 50%" bor src="/photo.jpg">
+<img width="180px" style="border-radius: 50%" bor src="/images/photo.jpg">
 
 # 浪霄笔记
 

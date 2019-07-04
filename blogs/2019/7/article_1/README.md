@@ -92,12 +92,14 @@ rows 也是一个重要的字段。 MySQL 查询优化器根据统计信息，�
 ### extra
 
 包含一些其他信息,常见的有以下几种:
-| - | 描述 | 
-| :--- | :--- | 
-| Using index | 表示相应的select操作中使用了覆盖索引（Covering Index） |
-| Using where | 表示拿到记录后进行“后过滤”（Post-filter）,如果查询未能使用索引，Using where的作用只是提醒我们MySQL将用where子句来过滤结果集。 |
+
+| - | 描述 |
+| :------ | :------ |
+| Using index | 表示直接访问索引就足够获取到所需要的数据，不需要通过索引回表。（覆盖索引（Covering Index）） |
+| Using where | 表示拿到记录后进行“后过滤”（Post-filter），如果查询未能使用索引，Using where的作用只是提醒我们MySQL将用where子句来过滤结果集。 |
 | Using temporary | 表示mysql在这个查询语句中使用了临时表。 |
 | Using filesort | 表示使用了文件排序,即查询中的排序无法通过索引来完成。 |
+| Using index condition | 5.6版本新特性，会先条件过滤索引，过滤完索引后找到所有符合索引条件的数据行，随后用 WHERE 子句中的其他条件去过滤这些数据行。 |
 
 ## 参考资料
 
