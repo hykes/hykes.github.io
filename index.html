@@ -51,6 +51,7 @@
       pagination: {
         previousText: '上一章节',
         nextText: '下一章节',
+        crossChapter: true
       },
       // 插件设置
       plugins: [
@@ -77,13 +78,12 @@
   <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
   <script>
     // 离线
     if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('scripts/sw.js')
+      navigator.serviceWorker.register('sw.js')
     }
     // gitter
     ((window.gitter = {}).chat = {}).options = {

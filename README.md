@@ -13,3 +13,5 @@
 <img src="/images/langxiao.jpg" width="180" height="180"/>
 
 <hr/>
+
+[追梦人](//music.163.com/outchain/player?type=2&id=423104042&auto=0&height=66 ':include :type=iframe width=330px height=86px')

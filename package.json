@@ -6,9 +6,9 @@
     "description": "",
     "scripts": {
         "start": "docsify serve",
-        "blogs": "node scripts/file.js blogs",
-        "draft": "node scripts/file.js draft",
-        "jdk": "node scripts/file.js topic/JDK",
-        "design": "node scripts/file.js topic/design-pattern"
+        "blogs": "node file.js blogs",
+        "draft": "node file.js draft",
+        "jdk": "node file.js topic/JDK",
+        "design": "node file.js topic/design-pattern"
     }
 }

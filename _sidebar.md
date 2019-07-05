@@ -25,5 +25,3 @@
     * [SOAP1.1与SOAP1.2的区别](blogs/the-difference-between-soap1.1-and-soap1.2.md)
 * **系统设计**
     * [站内信系统设计](blogs/2019/3/3/article_3/)
-* **关于我**
-    * [联系方式](blogs/about-me.md)
