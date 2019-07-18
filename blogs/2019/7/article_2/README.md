@@ -15,13 +15,13 @@ fdisk -l
 ```shell
 fdisk /dev/sdb
 ```
-- 输入 m，显示帮忙命令
+- 输入 m，显示帮助命令
 
 ![IMAGE](9D4088309962F108CABA7301B47A3271.jpg ':size=602x572')
 
 - 输入 n 进行分区
 - Partition type：p 为主分区，e 为逻辑分区。这里我们将这块盘分为主分区即输入 p
-- Partition number：输入该主分区为第几个主分区，由于是新盘我们输入1，表示第一个主分区
+- Partition number：输入该主分区为第几个主分区，由于是新盘，输入1，表示第一个主分区
 
 ![IMAGE](8069E799AF82ED2C90FE691ACF6A56B6.jpg ':size=672x351')
 
@@ -29,7 +29,7 @@ fdisk /dev/sdb
 
 ![IMAGE](CE6462C090F6356ECF77CD49EA09CBCB.jpg ':size=543x125')
 
-- 如果有 WARNING，则分区失败，查询具体原因
+- 如果有 WARNING，则需要查询具体原因
 
 ![IMAGE](4B69E8FBCC03A8E41BDAED81E0C8637A.jpg ':size=668x160')
 
@@ -53,6 +53,8 @@ df -h
 
 ![IMAGE](9AD0FBF1EA8F2B4570236359EC335C1D.jpg ':size=630x327')
 
+当前，新分区 sdb1 未挂载。
+
 > Filesystem: 文件系统
 
 > Size: 文件大小
@@ -64,7 +66,6 @@ df -h
 > Use%: 空间使用百分比
 
 > Mounted on: 挂载的目录
-
 
 > 如果磁盘是SATA接口，且有多个磁盘，则每个磁盘被标记为 /dev/hda、/dev/hdb、等以此类推；而每个磁盘的分区被标记为 /dev/hda1、 /dev/hda2等。
 
@@ -103,7 +104,7 @@ sudo mount /dev/sdb1 /data
 
 ```shell
 vi /etc/fstab
-# 再最后一行写入
+# 在最后一行写入
 /dev/sdb1 /data ext4 defaults 0 2 
 ```
 
