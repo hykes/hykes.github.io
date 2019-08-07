@@ -137,5 +137,5 @@ sudo mount -a
 ## 卸载分区
 
 ```shell
-mount /dev/sdb1
+umount /dev/sdb1
 ```

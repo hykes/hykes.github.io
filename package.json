@@ -9,6 +9,7 @@
         "blogs": "node file.js blogs",
         "draft": "node file.js draft",
         "jdk": "node file.js topic/JDK",
-        "design": "node file.js topic/design-pattern"
+        "design": "node file.js topic/design-pattern",
+        "spring": "node file.js topic/Spring"
     }
 }

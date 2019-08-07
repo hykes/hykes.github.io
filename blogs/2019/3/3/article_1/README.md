@@ -56,7 +56,7 @@ flush privileges;
 ## 修改用户密码
 
 命令: SET PASSWORD FOR 'username'@'host' = PASSWORD('newpassword');
-例子: SET PASSWORD FOR 'testuser'@'%' = PASSWORD('abcdef');
+例子: SET PASSWORD FOR 'testuser'@'%' = PASSWORD('123456');
 
 ```sql
 # 查询用户testuser在所有主机上的权限
@@ -68,5 +68,14 @@ SHOW GRANTS FOR 'testuser'@'%'
 举例：DROP USER 'testuser'@'%';
 用户被删除后user表中就不存在该用户的数据。但是有一点需要注意的是，user表中是通过用户名和主机名来唯一确定一个用户，如果运行CREATE USER 'testuser'@'10.1.1.1' IDENTIFIED BY 'password';和CREATE USER 'testuser'@'10.1.1.2' IDENTIFIED BY 'password';这两条语句，会在user表中插入两条信息。因此，删除用户的时候也只能分两次删除。
 
+## 遇到的问题
 
+1.不可以用刚安装好MySQL的初始密码登录，需要重置MySQL密码，然后用新密码来登录root账户。
 
+```
+Unable to connect to host 服务器IP because access was denied.
+
+Double-check your username and password and ensure that access from your current location is permitted.
+
+MySQL said: Access denied for user 'root'@'本机IP' (using password: YES)
+```

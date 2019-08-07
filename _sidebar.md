@@ -9,6 +9,7 @@
     * [MySQL用户及权限管理](blogs/2019/3/3/article_1/)
     * [MySQL中使用explain查看执行计划](blogs/2019/7/article_1/)
 * **工程实践**
+    * [如何调试远程Java代码](blogs/2019/8/article_1/)
     * [记一次服务器磁盘分区挂载操作](blogs/2019/7/article_2/)
     * [聊聊什么是缓存穿透、缓存击穿、缓存雪崩](blogs/2019/6/article_1/)
     * [RocketMQ问题排查](blogs/2019/5/29/article_2/)
