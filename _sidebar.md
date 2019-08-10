@@ -5,6 +5,8 @@
 * **领域驱动专题**
     * [1.领域驱动设计基础概念](blogs/2019/3/5/article_1/)
     * [2.领域驱动设计书籍推荐](blogs/2019/3/5/article_2/)
+* **思考**
+    * [谈谈我理解的方法论](blogs/2019/8/article_2/)
 * **数据库专题**
     * [MySQL用户及权限管理](blogs/2019/3/3/article_1/)
     * [MySQL中使用explain查看执行计划](blogs/2019/7/article_1/)
